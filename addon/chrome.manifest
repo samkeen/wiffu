@@ -1,0 +1,18 @@
+#
+# Chrome Manifest file (for Firefox 1.1+)
+#
+
+# WARNING: don't forget the '/' at the end of the paths or it won't work!!
+
+content    wiffu chrome/wiffu/content/
+
+overlay    chrome://browser/content/browser.xul chrome://wiffu/content/browser-overlay.xul
+
+skin       wiffu  classic/1.0  chrome/wiffu/skin/classic/
+
+# style overlay on other parts of the browser if needed
+# style    chrome://global/content/customizeToolbar.xul  chrome://wiffu/skin/browser.css
+
+style    chrome://global/content/customizeToolbar.xul  chrome://wiffu/skin/styles/toolbar.css
+
+locale     wiffu  en-US  chrome/wiffu/locale/en-US/

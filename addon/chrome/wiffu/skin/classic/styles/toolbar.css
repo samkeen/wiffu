@@ -1,0 +1,11 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/** This rule is for the browser toolbar and is working **/
+#wiffu-wiff-button {
+  list-style-image: url("chrome://wiffu/skin/wiffu24x24.png");
+}
+
+/** this rule is for the pallete and is broken **/
+toolbar[iconsize="small"] #wiffu-wiff-button {
+  list-style-image: url("chrome://wiffu/skin/wiffu16x16.png");
+}

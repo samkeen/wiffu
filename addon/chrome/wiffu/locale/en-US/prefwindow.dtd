@@ -1,0 +1,23 @@
+<!ENTITY prefwindow.title "wiffu preferences">
+<!ENTITY pane1.title "wiffu preferences">
+
+<!ENTITY username.label "Username">
+<!ENTITY username.accesskey "U">
+
+<!ENTITY password.label "Username">
+<!ENTITY password.accesskey "P">
+
+<!ENTITY wiff_uri.label "Wiff Server URI">
+<!ENTITY wiff_uri.accesskey "W">
+
+<!ENTITY wiffsession_uri.label "Wiff Session Server URI">
+<!ENTITY wiffsession_uri.accesskey "S">
+
+<!ENTITY remainanonymous.label "Remain Anonymous">
+<!ENTITY remainanonymous.accesskey "A">
+
+<!ENTITY debug.label "Debug">
+<!ENTITY debug.accesskey "A">
+
+<!ENTITY wiffinterval.label "Wiff Interval in Seconds">
+<!ENTITY wiffinterval.accesskey "I">

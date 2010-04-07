@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://wiffu/skin/styles/browser-overlay.css" type="text/css"?>
+<?xml-stylesheet href="chrome://wiffu/skin/styles/toolbar.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://wiffu/locale/browser-overlay.dtd">
+
+<overlay id="wiffu-browser-overlay" 
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+		<script type="application/x-javascript" src="chrome://wiffu/content/scripts/json.js"/>
+	  <script type="application/x-javascript" src="chrome://wiffu/content/scripts/utils.js"/>
+    <script type="application/x-javascript" src="chrome://wiffu/content/scripts/browser-overlay.js"/>
+    
+    
+    <script type="application/x-javascript">
+        WIFFU.initialize(); // this starts the whole show;
+    </script>
+
+    <menupopup id="menu_ToolsPopup">
+        <menuitem
+            id          ="javaFirefoxExtension.doIt.menu"
+            label       ="&wiffu.doIt.label;"
+            accesskey   ="&wiffu.doIt.accessKey;"
+            oncommand   ="alert(WIFFU.doIt());"
+            />
+    </menupopup>
+    
+    <toolbarpalette id="BrowserToolbarPalette">
+		  <toolbarbutton id="wiffu-wiff-button" class="toolbarbutton-1" 
+		  	label="&wiffu.toolbar.wiff.label;" 
+		  	tooltiptext="&wiffu.toolbar.wiff.tip;" 
+		  	oncommand="startWiffingCycle();" />
+	  </toolbarpalette>
+
+</overlay>

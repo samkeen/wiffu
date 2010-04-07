@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rdf:RDF 
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <rdf:Description rdf:about="urn:mozilla:install-manifest">
+
+    <em:name>Java Firefox Extension</em:name>
+<!--
+		sam.keen@moz.java.test is the ID of this extension.
+		
+		VERY IMPORTANT: Generate your own extension id. Do NOT re-use this one.
+		Use something like Visual Studio's guidgen utility to generate a GUID.
+		
+		This id is also present numerous times in
+		
+			wiffu/docs/update.rdf
+			
+		Make sure you keep all of them in sync.
+-->
+    <em:id>sam.keen@moz.java.test</em:id>
+    <em:version>1.0</em:version>
+    <em:type>2</em:type>
+    <em:creator>The SIMILE Project</em:creator>
+    <em:description>Demonstrates how to use Java inside a Firefox extension</em:description>
+
+    <em:contributor>David François Huynh</em:contributor>
+    
+    <em:homepageURL>http://simile.mit.edu/firefox-java-extension/</em:homepageURL>
+    <em:iconURL>chrome://wiffu/skin/wiffu24x24.png</em:iconURL>
+    <em:aboutURL>chrome://wiffu/content/about.xul</em:aboutURL>
+    <em:optionsURL>chrome://wiffu/content/options.xul</em:optionsURL>
+    <em:updateURL>http://wiffu.com/ff-ext/update</em:updateURL>
+    
+    <!-- 
+    	Target application is Firefox. You can try specifying other Mozilla
+    	applications such as Thunderbird and see.
+    -->
+    <em:targetApplication>
+      <rdf:Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>0.9</em:minVersion>
+        <em:maxVersion>2.0+</em:maxVersion>
+      </rdf:Description>
+    </em:targetApplication> 
+
+    <em:file>
+        <rdf:Description rdf:about="urn:mozilla:extension:file:wiffu">
+            <em:package>content/</em:package>
+            <em:locale>locale/en-US/</em:locale>
+            <em:skin>skin/classic/</em:skin>
+        </rdf:Description>
+    </em:file>
+
+  </rdf:Description>
+
+</rdf:RDF>

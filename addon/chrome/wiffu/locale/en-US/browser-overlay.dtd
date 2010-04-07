@@ -1,0 +1,4 @@
+<!ENTITY wiffu.doIt.label			"Java Firefox Extension: Do It!">
+<!ENTITY wiffu.doIt.accessKey		"j">
+<!ENTITY wiffu.toolbar.wiff.label	"wiff">
+<!ENTITY wiffu.toolbar.wiff.tip	"click to send wiff">

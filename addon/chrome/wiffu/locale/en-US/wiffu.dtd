@@ -1,0 +1,5 @@
+<!ENTITY wiffu.label "Your localized menuitem">
+<!ENTITY wiffuContext.label "Your Menuitem">
+<!ENTITY wiffuContext.accesskey "Y">
+<!ENTITY wiffuToolbar.label "Your Toolbar Button">
+<!ENTITY wiffuToolbar.tooltip "This is your toolbar button!">
